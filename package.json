@@ -1,0 +1,25 @@
+{
+  "name": "jokenpo",
+  "version": "1.0.0",
+  "description": "Um app do jogo jokenpo(pedra, papel e tesoura)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robertosousa86/jokenpo.git"
+  },
+  "keywords": [
+    "Tindin",
+    "API",
+    "front-end",
+    "Node.JS"
+  ],
+  "author": "Roberto Sousa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Robertosousa86/jokenpo/issues"
+  },
+  "homepage": "https://github.com/Robertosousa86/jokenpo#readme"
+}
