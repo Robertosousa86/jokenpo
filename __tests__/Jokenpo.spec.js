@@ -1,5 +1,5 @@
-describe('test of test', () => {
-  it('should be return 4', () => {
-    expect(2 + 2).toBe(4);
+describe('JokenpoService', () => {
+  it('should be return a random number between 0 and 2', () => {
+    expect().toBe();
   });
 });
