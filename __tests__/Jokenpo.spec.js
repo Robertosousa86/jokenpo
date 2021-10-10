@@ -13,5 +13,11 @@ describe('JokenpoService', () => {
     expect(JokenpoService.jokenpo(2)).toBe('tesoura');
   });
 
-  it('should be return a random number between 0 and 2', () => {});
+  it('should be return a random number between 0 and 2', () => {
+    const possibleNumber = [0, 1, 2];
+
+    const mock = JokenpoService.JokenpoRobot();
+
+    expect(possibleNumber.includes(mock)).toBe(true);
+  });
 });
