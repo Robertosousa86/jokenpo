@@ -1,5 +1,7 @@
+const jokenpo = require('../src/controller/JokenpoService');
+
 describe('JokenpoService', () => {
-  it('should be return a random number between 0 and 2', () => {
-    expect().toBe();
+  it('should be return `pedra` if the key is 0', () => {
+    expect(jokenpo(0)).toBe('pedra');
   });
 });
