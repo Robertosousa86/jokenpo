@@ -20,4 +20,8 @@ describe('JokenpoService', () => {
 
     expect(possibleNumber.includes(mock)).toBe(true);
   });
+
+  it('should return...', () => {
+   //
+  })
 });
