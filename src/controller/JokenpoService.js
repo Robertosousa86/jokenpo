@@ -8,4 +8,8 @@ const jokenpo = (key) => {
   return itens[key];
 };
 
-module.exports = { jokenpo };
+const jokenbot = () => {
+  return Math.floor(Math.random() * 3);
+};
+
+module.exports = { jokenpo, jokenbot };
