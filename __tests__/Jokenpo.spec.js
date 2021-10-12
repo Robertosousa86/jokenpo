@@ -21,6 +21,8 @@ describe('JokenpoService', () => {
   });
 
   it('should be return `Empate` if the number of key are the same', () => {
-    
-  })
+    const mock = 0;
+
+    expect(JokenpoService.game(0, 0)).toEqual({ message: 'Ops! Empate!' });
+  });
 });
