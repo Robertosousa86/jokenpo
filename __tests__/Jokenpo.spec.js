@@ -19,4 +19,8 @@ describe('JokenpoService', () => {
 
     expect(possibleNumber.includes(mock)).toBe(true);
   });
+
+  it('should be return `Empate` if the number of key are the same', () => {
+    
+  })
 });
