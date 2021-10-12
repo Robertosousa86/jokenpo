@@ -12,4 +12,12 @@ const jokenbot = () => {
   return Math.floor(Math.random() * 3);
 };
 
-module.exports = { jokenpo, jokenbot };
+const robot = jokenbot();
+
+function game(key, robotKey = robot) {
+  if (jokenpo(key) === 0 && robotKey === 0) {
+    return { message: 'Ops! Empate!' };
+  }
+}
+
+module.exports = { jokenpo, jokenbot, game };
