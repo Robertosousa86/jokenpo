@@ -23,6 +23,54 @@ describe('JokenpoService', () => {
   it('should be return `Empate` if the number of key are the same', () => {
     const mock = 0;
 
-    expect(JokenpoService.game(0, 0)).toEqual({ message: 'Ops! Empate!' });
+    expect(JokenpoService.game(0, mock)).toEqual({ message: 'Ops! Empate!' });
+  });
+
+  it('should be return `Wow! Você venceu!` if jokenpo key be 0 and robot be 2', () => {
+    const mock = 2;
+
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Wow! Você venceu!',
+    });
+  });
+
+  it('should be return `Wow! Você venceu!` if jokenpo key be 0 and robot be 1', () => {
+    const mock = 1;
+
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Heyta... Robot venceu!',
+    });
+  });
+
+  it('should be return `Wow! Você venceu!` if jokenpo key be 1 and robot be 0', () => {
+    const mock = 0;
+
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Wow! Você venceu!',
+    });
+  });
+
+  it('should be return `Wow! Você venceu!` if jokenpo key be 1 and robot be 2', () => {
+    const mock = 2;
+
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Heyta... Robot venceu!',
+    });
+  });
+
+  it('should be return `Wow! Você venceu!` if jokenpo key be 2 and robot be 1', () => {
+    const mock = 1;
+
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Wow! Você venceu!',
+    });
+  });
+
+  it('should be return `Wow! Você venceu!` if jokenpo key be 2 and robot be 0', () => {
+    const mock = 0;
+
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Heyta... Robot venceu!',
+    });
   });
 });
