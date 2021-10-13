@@ -20,7 +20,7 @@ describe('JokenpoService', () => {
     expect(possibleNumber.includes(mock)).toBe(true);
   });
 
-  it('should be return `Empate` if the number of key are the same', () => {
+  it('should be return `Ops! Empate!` if the number of key are the same', () => {
     const mock = 0;
 
     expect(JokenpoService.game(0, mock)).toEqual({ message: 'Ops! Empate!' });
