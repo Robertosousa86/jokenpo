@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.jokenpo {
+  background: linear-gradient(to right, #e4d9d6, #f7b733);
+}
+
+#jokenpo {
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rules {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(to right, #000000, #434343);
+  height: 205%;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  padding: 20px;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  text-align: center;
+  border-radius: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.buttons ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+#pedra {
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 3px red;
+  text-align: center;
+  align-items: center;
+  background: #000;
+}
+
+#papel {
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 3px blue;
+  text-align: center;
+  align-items: center;
+  background: #000;
+}
+
+#tesoura {
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid 3px green;
+  text-align: center;
+  align-items: center;
+  background: #000;
+}
+
+.game {
+  margin-top: 20px;
+  background: linear-gradient(to right, #093028, #237a57);
+  height: 211px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .rules {
+    font-size: 20px;
+  }
+
+  .buttons {
+    padding: 0;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: linear-gradient(to right, #3798b1, #edba6d);
+    text-align: center;
+    border-radius: 10px;
+  }
+}
