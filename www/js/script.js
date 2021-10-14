@@ -1,6 +1,5 @@
 function rock() {
   const value = 0;
-  console.log(value);
   $.ajax({
     type: 'post',
     url: '/',
@@ -26,13 +25,14 @@ function rock() {
           icon: 'warning',
         });
       }
+
+      score(data);
     },
   });
 }
 
 function paper() {
   const value = 1;
-  console.log(value);
   $.ajax({
     type: 'post',
     url: '/',
@@ -58,13 +58,14 @@ function paper() {
           icon: 'warning',
         });
       }
+
+      score(data);
     },
   });
 }
 
 function scissor() {
   const value = 2;
-  console.log(value);
   $.ajax({
     type: 'post',
     url: '/',
@@ -90,6 +91,41 @@ function scissor() {
           icon: 'warning',
         });
       }
+
+      score(data);
     },
   });
+}
+
+let player = 0;
+let robot = 0;
+
+$('#player').append(player);
+$('#robot').append(robot);
+
+function score(data) {
+  if (data.message === 'Wow! Você venceu!') {
+    player++;
+    $('#player').html('');
+    $('#player').append(player);
+  } else if (data.message === 'Heyta... Robot venceu!') {
+    robot++;
+    $('#robot').html('');
+    $('#robot').append(robot);
+  }
+
+  function cleaner() {
+    if (player === 3 || robot === 3) {
+      $('#player').html('');
+      $('#robot').html('');
+      $('#player').append(0);
+      $('#robot').append(0);
+
+      alert('Alguém vez 3 pontos! Os juizes estão checando o resultado...');
+
+      player = 0;
+      robot = 0;
+    }
+  }
+  cleaner();
 }
