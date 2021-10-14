@@ -16,27 +16,27 @@ const robot = jokenbot();
 
 function game(key, robotKey = robot) {
   if (jokenpo(key) === 0 && robotKey === 0) {
-    return { message: 'Ops! Empate!' };
+    return { message: 'Ops! Empate!', result: 2 };
   } else if (jokenpo(key) === 0 && robotKey === 2) {
-    return { message: 'Wow! Você venceu!' };
+    return { message: 'Wow! Você venceu!', result: 1 };
   } else if (jokenpo(key) === 0 && robotKey === 1) {
-    return { message: 'Heyta... Robot venceu!' };
+    return { message: 'Heyta... Robot venceu!', result: 0 };
   }
 
   if (jokenpo(key) === 1 && robotKey === 1) {
-    return { message: 'Empate' };
+    return { message: 'Ops! Empate!' };
   } else if (jokenpo(key) === 1 && robotKey === 0) {
-    return { message: 'Wow! Você venceu!' };
+    return { message: 'Wow! Você venceu!', result: 1 };
   } else if (jokenpo(key) === 1 && robotKey === 2) {
-    return { message: 'Heyta... Robot venceu!' };
+    return { message: 'Heyta... Robot venceu!', result: 0 };
   }
 
   if (jokenpo(key) === 2 && robotKey === 2) {
-    return { message: 'Empate' };
+    return { message: 'Ops! Empate!' };
   } else if (jokenpo(key) === 2 && robotKey === 1) {
-    return { message: 'Wow! Você venceu!' };
+    return { message: 'Wow! Você venceu!', result: 1 };
   } else if (jokenpo(key) === 2 && robotKey === 0) {
-    return { message: 'Heyta... Robot venceu!' };
+    return { message: 'Heyta... Robot venceu!', result: 0 };
   }
 }
 
