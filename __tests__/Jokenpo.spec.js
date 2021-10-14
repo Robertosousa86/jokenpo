@@ -23,7 +23,10 @@ describe('JokenpoService', () => {
   it('should be return `Ops! Empate!` if the number of key are the same', () => {
     const mock = 0;
 
-    expect(JokenpoService.game(0, mock)).toEqual({ message: 'Ops! Empate!' });
+    expect(JokenpoService.game(0, mock)).toEqual({
+      message: 'Ops! Empate!',
+      result: 2,
+    });
   });
 
   it('should be return `Wow! Você venceu!` if jokenpo key be 0 and robot be 2', () => {
@@ -31,6 +34,7 @@ describe('JokenpoService', () => {
 
     expect(JokenpoService.game(0, mock)).toEqual({
       message: 'Wow! Você venceu!',
+      result: 1,
     });
   });
 
@@ -39,6 +43,7 @@ describe('JokenpoService', () => {
 
     expect(JokenpoService.game(0, mock)).toEqual({
       message: 'Heyta... Robot venceu!',
+      result: 0,
     });
   });
 
@@ -47,6 +52,7 @@ describe('JokenpoService', () => {
 
     expect(JokenpoService.game(1, mock)).toEqual({
       message: 'Wow! Você venceu!',
+      result: 1,
     });
   });
 
@@ -55,6 +61,7 @@ describe('JokenpoService', () => {
 
     expect(JokenpoService.game(1, mock)).toEqual({
       message: 'Heyta... Robot venceu!',
+      result: 0,
     });
   });
 
@@ -63,6 +70,7 @@ describe('JokenpoService', () => {
 
     expect(JokenpoService.game(2, mock)).toEqual({
       message: 'Wow! Você venceu!',
+      result: 1,
     });
   });
 
@@ -71,6 +79,7 @@ describe('JokenpoService', () => {
 
     expect(JokenpoService.game(2, mock)).toEqual({
       message: 'Heyta... Robot venceu!',
+      result: 0,
     });
   });
 });
