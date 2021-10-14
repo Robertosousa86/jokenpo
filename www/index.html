@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>JOKENPO!</title>
@@ -25,18 +26,28 @@
 
   <div class="buttons">
     <ul>
-      <li><button id="pedra"><img src="./images/rock.png" alt="Uma mão fazendo gesto de pedra"></button></li>
-      <li><button id="papel"><img src="./images/paper.png" alt="Uma mão fazendo gesto de papel"></button></li>
-      <li><button id="tesoura"><img src="./images/scissor.png" alt="Uma mão fazendo gesto de tesoura"></button></li>
+      <li>
+        <button id="pedra" onclick="rock()"><img src="./images/rock.png" alt="Uma mão fazendo gesto de pedra"></button>
+      </li>
+      <li>
+        <button id="papel" onclick="paper()"> <img src="./images/paper.png"
+            alt="Uma mão fazendo gesto de papel"></button>
+      </li>
+      <li>
+        <button id="tesoura" onclick="scissor()"><img src="./images/scissor.png"
+            alt="Uma mão fazendo gesto de tesoura"></button>
+      </li>
     </ul>
   </div>
 
   <div class="game">
     <ul>
-      <p>Resultado</p>
-
+      <p>Fight!</p>
     </ul>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
