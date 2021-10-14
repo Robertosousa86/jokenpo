@@ -13,6 +13,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .rules {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -78,6 +79,15 @@ ul {
   background-position: center;
   height: 211px;
   border-radius: 10px;
+}
+
+.game ul li {
+  margin-top: 95px;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: #f12711;
 }
 
 @media screen and (max-width: 600px) {
